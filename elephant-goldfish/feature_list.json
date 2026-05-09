@@ -1,0 +1,33 @@
+{
+  "workflow_version": "elephant-goldfish-v1",
+  "description": "大象-金鱼模型功能追踪 / Elephant-Goldfish Feature Tracker",
+  "phases": {
+    "design": "🐘 设计讨论（禁止写代码）",
+    "document": "📄 编写设计文档",
+    "goldfish": "🐟 金鱼验证（新会话测试）",
+    "implement": "⚙️ 实施编码",
+    "done": "✅ 完成"
+  },
+  "features": [
+    {
+      "id": "F001",
+      "name": "示例功能 / Example Feature",
+      "description": "替换为你的第一个功能描述",
+      "status": "todo",
+      "phase": null,
+      "design_doc": null,
+      "goldfish_tests": {
+        "comprehension": false,
+        "critic": false,
+        "ready": false
+      },
+      "human_approved": false,
+      "notes": ""
+    }
+  ],
+  "instructions": {
+    "add_feature": "在 features 数组中添加新对象，status 设为 todo",
+    "status_values": ["todo", "in_design", "in_document", "in_goldfish", "in_implement", "done"],
+    "verification": "所有三个 goldfish_tests 必须为 true 且 human_approved 为 true 才能进入实施阶段"
+  }
+}
