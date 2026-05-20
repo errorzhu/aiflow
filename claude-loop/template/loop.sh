@@ -67,7 +67,7 @@ for i in $(seq 1 $MAX); do
 
   # Claude 在 session 内自行决定何时运行 verify.sh
   # session 结束后 loop.sh 再做最终判定
-  claude --print \
+  claude --model qwen3.6-plus --dangerously-skip-permissions --print \
     "读取 $CLAUDE_MD 了解当前任务和状态。需要细节时按需读取 memory/ 下对应文件。完成阶段性工作后主动运行 bash $VERIFY 检查进度，根据结果决定继续还是结束。session 结束前覆盖更新 $L1_FILE（不超过 20 行）。" \
     2>&1 | tee "$ROUND_LOG" | tee -a "$MAIN_LOG"
 

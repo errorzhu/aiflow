@@ -71,7 +71,7 @@ else
 fi
 
 # slash commands
-for CMD in explore.md planner.md; do
+for CMD in explore.md planner.md explore-templates.md; do
   DST="$CLAUDE_DIR/commands/$CMD"
   if [ -f "$DST" ]; then
     echo "  ⚠  .claude/commands/$CMD 已存在，跳过"
