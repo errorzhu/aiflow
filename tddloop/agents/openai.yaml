@@ -1,0 +1,3 @@
+interface:
+  display_name: "TDD Loop"
+  short_description: "Automate the TDD cycle: verification conditions, test generation, and implementation validation"

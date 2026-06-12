@@ -1,0 +1,14 @@
+{
+  "_comment": "tddloop 项目配置 — 定义技术栈相关的命令模板和路径",
+  "python_prefix": "",
+  "test_runner": "pytest {test_file} -v",
+  "test_runner_all": "pytest tests/ -v",
+  "lint": "flake8 src/",
+  "test_file_pattern": "tests/test_{condition_id}.py",
+  "test_func_pattern": "test_{case_id}_{desc}",
+  "conditions_file": "conditions/conditions.json",
+  "markdown_export": "conditions/conditions.md",
+  "implementation_dir": "src",
+  "auto_mark_done": true,
+  "max_retries": 3
+}
